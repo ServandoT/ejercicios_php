@@ -1,10 +1,29 @@
 body {
-    background-color: ;
+    background-color: #161616;
+    color: rgb(204, 204, 204);
     /*TODO: Revisar la fuente*/
-    font-family: 'Cascadia code, Sans serif'; 
+    font-family: Lexend, Sans serif; 
     text-align: center;
 }
     
 h1 {
+    font-size: large;
+}
+
+form {
+    border: solid 2px grey;
+    margin-top: 10px;
+}
+
+input {
+    /* TODO: Hacer los input más bonitos*/
+}
+
+/* TODO: Diferenciar el botón de submit */
+.submit:hover {
+    
+}
+
+.submit {
 
 }
