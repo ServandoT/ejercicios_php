@@ -10,13 +10,24 @@ h1 {
     font-size: large;
 }
 
+/* Centra su contenido tanto vertical como horizontalmente */
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     border: solid 2px grey;
+    border-radius: 5px;
     margin-top: 10px;
+    width: 60%;
+    text-align: center;
 }
 
 input {
     /* TODO: Hacer los input más bonitos*/
+    margin: 7px;
 }
 
 /* TODO: Diferenciar el botón de submit */
@@ -25,5 +36,5 @@ input {
 }
 
 .submit {
-
+    margin: 10px;
 }
