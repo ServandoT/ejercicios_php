@@ -7,7 +7,7 @@ body {
 }
     
 h1 {
-    font-size: large;
+    font-size: 40px;
 }
 
 /* Centra su contenido tanto vertical como horizontalmente */
@@ -30,7 +30,7 @@ input {
     margin: 7px;
 }
 
-/* TODO: Diferenciar el botón de submit */
+/* TODO: Hacer una animacion cuando esté encima, cambiar de color poco a poco, Midudev */
 .submit:hover {
     
 }
