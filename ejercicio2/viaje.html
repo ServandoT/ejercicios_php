@@ -9,7 +9,11 @@
   <body>
     <h1>Ejercicio 2</h1>
     <div class="formulario">
-      <form action="viaje.php" method="post"></form>
+      <form action="viaje.php" method="get">
+        <input type="number" id="distancia" placeholder="Distancia en kilómetros">
+        <input type="number" id="velocidad" placeholder="Velocidad">
+        <button type="submit">Calcular tiempo</button>
+      </form>
     </div>
   </body>
 </html>

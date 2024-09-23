@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 4</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
     <?php
-    $nombre = $_GET["nombre"];
-    $apellido = $_GET["apellido"];
-
-    echo "<p>Hola $nombre $apellido </p>";
+        // TODO: comprobar si funciona
+        $dias = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
+        echo "$dias[$num]";
     ?>
 </body>
-
 </html>
