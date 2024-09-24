@@ -10,7 +10,14 @@
 
 <body>
     <?php
-        
+        $listaCompleta = $_GET['listaCompra'];
+        $compraArray = explode(":", $listaCompleta,100);
+
+        echo "<p>";
+        foreach($compraArray as $producto) {
+            echo $producto . "<br>";
+        }
+        echo "</p>";
     ?>
 </body>
 </html>

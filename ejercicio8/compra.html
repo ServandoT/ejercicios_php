@@ -10,9 +10,20 @@
     <h1>Ejercicio 8</h1>
     <div class="formulario">
         <form action="compra.php" method="get">
-            <input type="text" id="producto"><button>Añadir</button><br>
-            <button type="submit"></button>
+            <label for="producto">Producto:</label><br>
+            <input type="text" id="producto" placeholder="Producto a añadir">
+            <button type="button" onclick="add()">Añadir</button><br>
+            <button type="submit">Mostrar compra</button>
+            <input type="text" id="listaCompra" name="listaCompra" hidden>
         </form>
     </div>
+
+    <script>
+        function add() {
+            let producto = document.getElementById("producto").value;
+            document.getElementById("producto").value = "";
+            document.getElementById("listaCompra").value += producto + ":";
+        }
+    </script>
 </body>
 </html>
