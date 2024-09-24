@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 6</title>
+    <title>Ejercicio 7</title>
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
     <?php
+        $tabla = "";
         $numero = $_GET["numero"];
-        $suma = 0;
-
-        for ($i = 1; $i <= $numero; $i++) {
-            $suma += $i;
+        for ($i = 1; $i <= 10; $i++) {
+            $tabla += $numero + " x " + $i + " = ";
+            $tabla += ($i * $numero) + "\n";
         }
-        
-        echo "La suma de todos los números desde 1 hasta $numero es $suma";
+
+        echo "<p>$tabla</p>";
     ?>
 </body>
 </html>
