@@ -10,7 +10,7 @@
 
 <body>
     <?php
-        // TODO: comprobar si funciona
+        $num = intval($_GET["num"]) - 1;
         $dias = array("Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo");
         echo "$dias[$num]";
     ?>

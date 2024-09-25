@@ -12,7 +12,7 @@
     <?php
         $listaCompleta = $_GET['listaCompra'];
         $compraArray = explode(":", $listaCompleta,100);
-
+        echo "<h1>Lista de la compra</h1>";
         echo "<p>";
         foreach($compraArray as $producto) {
             echo $producto . "<br>";

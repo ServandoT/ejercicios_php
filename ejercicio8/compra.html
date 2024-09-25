@@ -22,7 +22,10 @@
         function add() {
             let producto = document.getElementById("producto").value;
             document.getElementById("producto").value = "";
-            document.getElementById("listaCompra").value += producto + ":";
+
+            if (producto !== ""){
+                document.getElementById("listaCompra").value += producto + ":";
+            }  
         }
     </script>
 </body>

@@ -10,11 +10,14 @@
 
 <body>
     <?php
-        $distancia = $GET["distancia"];
-        $velocidad = $GET["velocidad"];
-        // TODO: Calcular horas y minutos, no solo dejar 1,4 horas
-        $tiempo = $distancia / $velocidad;
-        echo "<p>Vas a tardar $tiempo horas</p>"
+        $distancia = $_GET["distancia"];
+        $velocidad = $_GET["velocidad"];
+        
+        // Con intval cogmos la parte entera, las horas
+        $horas = intval($distancia / $velocidad);
+        $minutos = intval((($distancia/$velocidad) - $horas) * 60);
+
+        echo "<p>Vas a tardar $horas horas y $minutos minutos</p>"
     ?>
 </body>
 </html>

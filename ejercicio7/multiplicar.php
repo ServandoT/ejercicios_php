@@ -12,9 +12,10 @@
     <?php
         $tabla = "";
         $numero = $_GET["numero"];
+        $tabla .= "<h1>Tabla del $numero</h1>";
         for ($i = 1; $i <= 10; $i++) {
-            $tabla += $numero + " x " + $i + " = ";
-            $tabla += ($i * $numero) + "\n";
+            $tabla .= $numero . " x " . $i . " = ";
+            $tabla .= ($i * $numero) . "<br>";
         }
 
         echo "<p>$tabla</p>";

@@ -15,9 +15,9 @@
 
         if ($edad < 12) {
             $resultado = "Infante";
-        } elseif ($edad >= 12 || $edad <= 17) {
+        } elseif ($edad >= 12 && $edad <= 17) {
             $resultado = "Adolescente";
-        } elseif ($edad >= 18 || $edad <= 60) {
+        } elseif ($edad >= 18 && $edad <= 60) {
             $resultado = "Adulto";
         } else {
             $resultado = "Anciano";
