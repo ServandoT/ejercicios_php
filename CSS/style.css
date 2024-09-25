@@ -30,11 +30,6 @@ input {
     margin: 7px;
 }
 
-/* TODO: Hacer una animacion cuando esté encima, cambiar de color poco a poco, Midudev */
-.submit:hover {
-    
-}
-
 .submit {
     margin: 10px;
 }
